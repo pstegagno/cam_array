@@ -1,0 +1,5 @@
+<!-- -->
+<launch>
+	<node pkg="odroid_usbio_driver" type="usbio" name="usbio" output="screen" >
+	</node>
+</launch>

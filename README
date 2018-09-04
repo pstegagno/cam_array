@@ -1,0 +1,7 @@
+to install the drivers for the mvBlueFox camera, simply run the script:
+
+$ ./install_mvBlueFox_drivers.sh
+
+and put your admin pasword when required 
+
+enjoy

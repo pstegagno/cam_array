@@ -1,0 +1,9 @@
+<!-- -->
+
+<launch>
+
+	<!--Node to visualize the camera 2 and 3  -->
+	<node pkg="odroid_usbio_driver" type="usbio" name="usbio" output="screen" >
+	</node>
+
+</launch>

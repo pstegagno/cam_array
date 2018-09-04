@@ -1,0 +1,229 @@
+All reviewer's evaluation seem to be same.
+They agree to your original contribution. On the other
+hand, they pointed out evaluations were too poor.  Current
+version is early stage and total quality is too low.
+All of us believe it will be the high quality paper.  
+I recommend that the authors carefully read all reviewer's
+comment and improve the paper. 
+
+----------------------------------------
+Comments on Video Attachment:
+
+
+
+
+
+Reviewer 1 of IROS 2015 submission 1006
+
+Comments to the author
+======================
+
+The paper presents a trifocal and multimodal camera sensor
+dedicated to MAV and to the labeling of natural scenes.
+This topic is very interesting and the proposed sensor
+could be useful for the semantic interpretation of outdoor
+scenes	as well as localization. In order to embed the
+sensor on a MAV and to benefit of the multimodal signature
+of the images, two cameras with red filter and one
+near-infrared are used. The authors proposed then to employ
+the NDVI index for performing a classification between four
+classes of natural objects (soil, water, green and dry
+vegetations). This sensor is also proposed for the 3D
+estimation of the scene. However, this aspect is not
+presented precisely in the paper. Both the hardware and
+software aspects for NDVI computation are very well
+described. The classification and clustering process is
+based on a fuzzy labeling.
+The positive points of the paper are the presentation on
+the sensor and the associated treatments for the NDVI
+computation.
+The weak points are the experimental results that are quite
+limited. They are essentially based on a single sequence
+that presents always similar aspect. Some different
+environments should be presented. Results are obtained from
+an handheld camera while initially the goal of to embed the
+system on a UAV. It is mentioned as future works but the
+demonstration that the system can be installed at least on
+the UAV could be good. Nothing is really shown about the 3D
+estimation that was also presented as one of the main goal
+of the sensor. Is it possible to manage more than four
+classes ? A comparison with some methods based on classical
+vision for scene labeling could also be more discussed.
+
+In the paper, I think that the RedC computation is not
+explained sufficiently. It seems that this computation is
+linked to the 3D estimation also (figure 4), but it is not
+clear in the paper. This point must be corrected.
+
+Comments on the Video Attachment
+================================
+
+The video just shows a similar sequence than in the paper
+on a limited distance. Some other environments could have
+been interesting.
+
+
+
+
+
+
+Reviewer 2 of IROS 2015 submission 1006
+
+Comments to the author
+======================
+
+The basic idea is reasonable and the motivation is solid,
+although not very novel.
+
+The references in the paper are somewhat dated and, as a
+result provide a stilted picture of the state of the art. 
+It should be noted that there have been a plethora of
+monocular and binocular range, ego-motion or odometry
+systems developed for use on UAV's in the last 5 years and
+their status are not very well reflected in the outline of
+prior work.  I do not think, by any means that they all
+need to be referenced, but the picture needs to be updated.
+
+The section on the background regarding spectral analysis
+is straightforward and somewhat overly-long given the
+simplicity of the approach and the background of the
+typical reader.
+
+The section on hardware setup is also a bit long on
+readily-understood details (for example the issue of camera
+matching), although the presence of sufficient data to
+allow the setup to replicated or validated is appreciated. 
+Despite this detailed story, however, it is not clear
+whether the camera is CCD or CMOS, or whether it is a
+global or rolling shutter which is perhaps the single most
+salient attribute of such a camera. 
+
+The manner is which the correction factors in Eq 4 were
+arrived at is insufficiently explained.
+
+While the objectives of the paper are reasonable, the paper
+fails to fully deliver on them.
+Much is made of the need for highly optimized performance
+that would allow various computations such as depth
+recovery on a MAV platform.  What is actually reported,
+however, is a system that comparatively large and heavy,
+and for which the performance via-a-vis the state of the 
+art is not clearly indicated.  
+
+The classification results are informal and subjective and
+given 
+types of alternates available today the extent of the
+contribution needs to be demonstrated in a more definitive
+manner.  This applies particularly to the the ability of
+the multiband camera to achieve useful classification in
+comparison to alternative approaches based on simple
+classified based on conventional color cameras.
+
+Reports are reported based on the use of an "i5 PC"; the
+notion of an i5 PC is vague since a wide range of "i5
+cpu's" (let alone "PC" systems) exist with substantially
+varying performance profiles.  i5 CPU's alone span 5
+architectural generations and vary in performance by a
+large factor (easily a factor of 2).
+
+
+Minor issues (typographical or grammatical)
+
+"on-the-shelf" multi-spectral
+sensors,  should be "off the shelf"
+
+"this type of sensor arrays" should be "this type of sensor
+array"
+
+"exposition times" should be "exposure times" (or something
+similar)
+
+"clusterization" is not a word and thus should (in most
+instances) be  "clustering"
+
+"sensor is sensible in the bands" is poor English
+
+
+
+Relevant citations 
+
+Y. Shaowu and S.A. Scherer and A. Zell, An Onboard
+Monocular Vision System for Autonomous
+Takeoff, Hovering and Landing of a Micro Aerial Vehicle,
+Journal of Intelligent & Robotic Systems (2012): 1-17.
+
+A. Torres-Gonzalez, J.R. Martinez-de Dios, A. Ollero,
+"Efficient Robot-Sensor Network Distributed SEIF Range-Only
+SLAM", ICRA 2014, Hong Kong,  2014.
+
+Davison, A., Reid, I., Molton, N., and Stasse, O.,
+“MonoSLAM: Real-time single camera SLAM,”  Transactions on
+Pattern Analysis and Machine Intelligence, 29(6), 1052,
+2007.
+
+
+Raúl Mur-Artal and Juan D. Tardós. "ORB-SLAM: Tracking and
+Mapping Recognizable Features," Robotics: Science and
+Systems (RSS) Workshop on Multi VIew Geometry in RObotics
+(MVIGRO), Berkeley, USA, July 2014. 
+
+
+Comments on the Video Attachment
+================================
+
+The video is a very useful illustration of the performance
+of the method, but the results are not compelling since
+there are numerous misclassified pixels and more generally
+an absence of objective performance evaluation.
+
+
+
+
+
+Reviewer 4 of IROS 2015 submission 1006
+
+Comments to the author
+======================
+
+This paper developed a novel system to classify materials
+in the scene using a low-cost low-weight camera array. The
+proposed sensor design enables simultaneous application of
+stereo camera and multi-spectral camera. Experiments were
+conducted on a new dataset captured around the campus of
+the Max Planck Institute for biological Cybernetics. The
+biggest weakness of this work is that there is no
+description nor evaluation of natural landmarks
+identification, which must be the main target of this
+paper, judging from the paper’s title. This work only
+demonstrated pixel-wise classification of outdoor materials
+and the reconstructed point-cloud of the healthy vegetation
+class only (with no quantitative evaluation), which is far
+behind the application of natural landmarks identification.
+The discussion on how landmarks for outdoor navigation
+should be designed, as well as on how the material
+classification should be done for the landmarks
+identification, is necessary. In this sense, (2), which
+summarizes the classification tackled in this paper, is
+ambiguous. The target classes and their characteristic NDVI
+values should be specified there.
+Also as the study of the first prototype sensor and its
+evaluation, the description and experiments of the proposed
+system are insufficient. For instance, Fig. 6 showed the
+classified images before and after the clusterization
+described in Section IV-B, but the difference between them
+seems marginal; the quantitative evaluation on the
+improvement should be provided. Besides, as long as there
+is no ground truth NDVI values nor the ground truth labels
+of material classification, it is impossible to judge
+whether the system output is good or not. At least some
+qualitative evaluation of Fig. 6 should be given. The
+reason why many pixels in the background were misclassified
+as “soil/concrete” should be discussed.
+
+Comments on the Video Attachment
+================================
+
+It is simply too hard to find any difference between the
+middle bottom image and the right bottom image. Please
+highlight notable regions which should be paid attention
+to.

@@ -1,0 +1,41 @@
+<!-- -->
+
+<launch>
+
+<!-- Camera1 -->
+
+  <!-- Variable names camera1-->
+  <arg name="camera_node1" default="camera1" />
+  <arg name="calibration_file1" default="" />
+
+  <!-- Variable names camera2-->
+  <arg name="camera_node2" default="camera2" />
+  <arg name="calibration_file2" default="" />
+
+  <!-- Variable names camera3-->
+  <arg name="camera_node3" default="camera3" />
+  <arg name="calibration_file3" default="" />
+
+  <!-- Variable names camera4-->
+  <arg name="camera_node4" default="camera4" />
+  <arg name="calibration_file4" default="" />
+
+
+<!--Node to get the camera2 -->	
+  <node pkg="mv_bluefox_driver" type="camera_node" name="$(arg camera_node2)" output="screen" >
+    <param name="width" type="int" value="752" />
+    <param name="height" type="int" value="480" />
+    <param name="auto_gain" type="bool" value="true" />
+    <param name="use_color" type="bool" value="true" /> 
+    <param name="frame_id" type="string" value="bluefox" />
+    <param name="calibration_file" type="string" value="$(arg calibration_file2)" />
+    <param name="num_camera" type="string" value="25000059" />
+  </node>
+
+
+<!--Node to visualize the camera4 -->
+ <node pkg="camera_array" type="camera_viewer" name="viewer" output="screen" >
+  </node>
+
+</launch>
+
